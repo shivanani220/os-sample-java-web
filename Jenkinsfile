@@ -13,7 +13,7 @@ pipeline {
       git 'https://github.com/shivanani220/os-sample-java-web.git'
            }
         }
-    stage(build)
+      stage(build) {
       steps {
       sh label: '', script: 'mvn clean package'
             }
